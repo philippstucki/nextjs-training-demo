@@ -20,7 +20,7 @@ const Page: NextPage = () => (
         </li>
         <li>
           <Link href="/page-modes/ssr">
-            <a>SSR</a>
+            <a>Server Side Rendering</a>
           </Link>
         </li>
       </ul>

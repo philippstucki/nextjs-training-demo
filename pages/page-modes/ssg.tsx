@@ -2,7 +2,8 @@ import type { NextPage } from "next";
 
 const Page: NextPage = () => (
   <main>
-    <p>This page is rendered statically on build</p>
+    <h1>Static Generation Without Data</h1>
+    <p>This page is rendered statically on build.</p>
   </main>
 );
 
