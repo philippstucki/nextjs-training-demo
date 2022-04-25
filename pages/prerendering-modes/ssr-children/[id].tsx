@@ -8,7 +8,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     },
   };
 };
-
 interface PageProps {
   id: number;
   timestamp: string;

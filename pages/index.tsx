@@ -9,17 +9,22 @@ const Page: NextPage = () => (
       <h2>Page Rendering Modes</h2>
       <ul>
         <li>
-          <Link href="/page-modes/ssg">
+          <Link href="/prerendering-modes/ssg">
             <a>Static Generation Without Data</a>
           </Link>
         </li>
         <li>
-          <Link href="/page-modes/ssg-with-data">
+          <Link href="/prerendering-modes/ssg-with-data">
             <a>Static Generation With Data</a>
           </Link>
         </li>
         <li>
-          <Link href="/page-modes/ssr">
+          <Link href="/prerendering-modes/isr">
+            <a>Incremental Static Regeneration</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/prerendering-modes/ssr">
             <a>Server Side Rendering</a>
           </Link>
         </li>
