@@ -4,7 +4,7 @@ import Link from "next/link";
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
     timestamp: new Date().toISOString(),
-    pageIds: [...Array(5).keys()].map(() => (Math.random() * 1000) | 0),
+    pageIds: [...Array(5).keys()].map((i) => (i + 1) * 100),
   },
 });
 
@@ -22,7 +22,7 @@ const Page: NextPage<PageProps> = (props) => (
     <ul>
       {props.pageIds.map((id: number) => (
         <li key={id}>
-          <Link href={`./ssr-children/${id}`}>
+          <Link href={`/prerendering-modes/ssr-children/${id}`}>
             <a>{id}</a>
           </Link>
         </li>
