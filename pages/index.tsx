@@ -29,6 +29,15 @@ const Page: NextPage = () => (
           </Link>
         </li>
       </ul>
+
+      <h2>Page Rendering Modes</h2>
+      <ul>
+        <li>
+          <Link href="/env-vars">
+            <a>Env Variables</a>
+          </Link>
+        </li>
+      </ul>
     </main>
   </>
 );
