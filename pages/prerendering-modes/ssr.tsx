@@ -1,12 +1,14 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Link from "next/link";
 
-export const getServerSideProps: GetServerSideProps = async () => ({
-  props: {
-    timestamp: new Date().toISOString(),
-    pageIds: [...Array(5).keys()].map((i) => (i + 1) * 100),
-  },
-});
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      timestamp: new Date().toISOString(),
+      pageIds: [...Array(5).keys()].map((i) => (i + 1) * 100),
+    },
+  };
+};
 
 interface PageProps {
   timestamp: string;
