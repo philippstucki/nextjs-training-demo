@@ -3,14 +3,12 @@ import type { AppProps } from "next/app";
 import { useState } from "react";
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
-  const [count, setCount] = useState(0);
+  const [menu, setMenu] = useState(false);
 
   return (
     <div id="customApp">
-      <p>Main Layout</p>
-      <button onClick={() => setCount(count + 1)}>
-        Current count: {count}
-      </button>
+      <h1>Hello From App Component</h1>
+      <button onClick={() => setMenu(!menu)}>{JSON.stringify(menu)}</button>
       <Component {...pageProps} />
     </div>
   );

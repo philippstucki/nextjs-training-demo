@@ -1,8 +1,17 @@
+import React from "react";
 import type { NextPage } from "next";
 import Link from "next/link";
 
-const Page: NextPage = () => (
-  <>
+const NamesList = (props: { names: string[] }) => (
+  <ul>
+    {props.names.map((name) => (
+      <li>Name: {name}</li>
+    ))}
+  </ul>
+);
+
+const Page: NextPage = () => {
+  return (
     <main>
       <h1>Next.js Training Demo</h1>
 
@@ -10,23 +19,21 @@ const Page: NextPage = () => (
       <ul>
         <li>
           <Link href="/prerendering-modes/ssg">
-            <a>Static Generation Without Data</a>
+            Static Generation Without Data
           </Link>
         </li>
         <li>
           <Link href="/prerendering-modes/ssg-with-data">
-            <a>Static Generation With Data</a>
+            Static Generation With Data
           </Link>
         </li>
         <li>
           <Link href="/prerendering-modes/isr">
-            <a>Incremental Static Regeneration</a>
+            Incremental Static Regeneration
           </Link>
         </li>
         <li>
-          <Link href="/prerendering-modes/ssr">
-            <a>Server Side Rendering</a>
-          </Link>
+          <Link href="/prerendering-modes/ssr">Server Side Rendering</Link>
         </li>
       </ul>
 
@@ -39,7 +46,7 @@ const Page: NextPage = () => (
         </li>
       </ul>
     </main>
-  </>
-);
+  );
+};
 
 export default Page;
