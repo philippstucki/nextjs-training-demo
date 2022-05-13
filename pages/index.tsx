@@ -36,11 +36,42 @@ const Page: NextPage = () => {
         </li>
       </ul>
 
-      <h2>Hooks and Lifecycle</h2>
+      <h2>Class Components</h2>
       <ul>
         <li>
-          <Link href="/hooks/lifecycle">Component Lifecycle</Link>
+          <Link href="/class-components/stateless">
+            Stateless Class Component
+          </Link>
         </li>
+        <li>
+          <Link href="/class-components/stateful">
+            Stateful Class Component
+          </Link>
+        </li>
+        <li>
+          <Link href="/class-components/lifecycle-methods">
+            Class Component Lifecycle
+          </Link>
+        </li>
+      </ul>
+
+      <h2>Function Components</h2>
+      <ul>
+        <li>
+          <Link href="/function-components/stateless">Stateless Component</Link>
+        </li>
+        <li>
+          <Link href="/function-components/lifecycle-methods">
+            Function Component Lifecycle
+          </Link>
+        </li>
+      </ul>
+
+      <h2>Hooks</h2>
+      <ul>
+        {/* <li>
+          <Link href="/hooks/lifecycle">Component Lifecycle</Link>
+        </li> */}
       </ul>
     </main>
   );
