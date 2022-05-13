@@ -2,14 +2,6 @@ import React from "react";
 import type { NextPage } from "next";
 import Link from "next/link";
 
-const NamesList = (props: { names: string[] }) => (
-  <ul>
-    {props.names.map((name) => (
-      <li>Name: {name}</li>
-    ))}
-  </ul>
-);
-
 const Page: NextPage = () => {
   return (
     <main>
@@ -37,12 +29,17 @@ const Page: NextPage = () => {
         </li>
       </ul>
 
-      <h2>Page Rendering Modes</h2>
+      <h2>Environment</h2>
       <ul>
         <li>
-          <Link href="/env-vars">
-            <a>Env Variables</a>
-          </Link>
+          <Link href="/env-vars">Env Variables</Link>
+        </li>
+      </ul>
+
+      <h2>Hooks and Lifecycle</h2>
+      <ul>
+        <li>
+          <Link href="/hooks/lifecycle">Component Lifecycle</Link>
         </li>
       </ul>
     </main>
