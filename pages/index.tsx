@@ -55,23 +55,21 @@ const Page: NextPage = () => {
         </li>
       </ul>
 
-      <h2>Function Components</h2>
+      <h2>Hooks</h2>
       <ul>
         <li>
-          <Link href="/function-components/stateless">Stateless Component</Link>
-        </li>
-        <li>
-          <Link href="/function-components/lifecycle-methods">
+          <Link href="/hooks/lifecycle-methods">
             Function Component Lifecycle
           </Link>
         </li>
-      </ul>
-
-      <h2>Hooks</h2>
-      <ul>
-        {/* <li>
-          <Link href="/hooks/lifecycle">Component Lifecycle</Link>
-        </li> */}
+        <li>
+          <Link href="/hooks/resize-observer">Using ResizeObserver</Link>
+        </li>
+        <li>
+          <Link href="/hooks/resize-observer">
+            Custom Hook: useElementWidth()
+          </Link>
+        </li>
       </ul>
     </main>
   );
