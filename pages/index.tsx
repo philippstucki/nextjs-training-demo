@@ -62,16 +62,30 @@ const Page: NextPage = () => {
         </li>
         <li>
           <Link href="/hooks/lifecycle-methods">
-            Function Component Lifecycle
+            useRef(), useEffect(), useState()
           </Link>
         </li>
+      </ul>
+
+      <h2>Custom Hooks</h2>
+      <ul>
         <li>
           <Link href="/hooks/resize-observer">Using ResizeObserver</Link>
         </li>
         <li>
-          <Link href="/hooks/resize-observer">
+          <Link href="/hooks/use-element-width">
             Custom Hook: useElementWidth()
           </Link>
+        </li>
+      </ul>
+
+      <h2>State Management</h2>
+      <ul>
+        <li>
+          <Link href="/state-management/prop-drilling">Prop Drilling</Link>
+        </li>
+        <li>
+          <Link href="/state-management/context-api">Context API</Link>
         </li>
       </ul>
     </main>
