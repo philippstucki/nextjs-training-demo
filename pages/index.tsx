@@ -87,6 +87,9 @@ const Page: NextPage = () => {
         <li>
           <Link href="/state-management/context-api">Context API</Link>
         </li>
+        <li>
+          <Link href="/state-management/zustand">Zustand</Link>
+        </li>
       </ul>
     </main>
   );

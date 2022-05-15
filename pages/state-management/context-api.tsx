@@ -31,7 +31,7 @@ const ContextApiPage: NextPage = () => {
   const addItem = () => {
     setItems((currentItems) => [
       ...currentItems,
-      { title: `Item ${currentItems.length}` },
+      { title: `Item ${currentItems.length + 1}` },
     ]);
   };
 
