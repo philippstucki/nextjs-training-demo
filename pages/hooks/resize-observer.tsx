@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const UseStateDemo: NextPage = () => {
+const ResizeObserverPage: NextPage = () => {
   const observer = useRef<ResizeObserver>();
   const containerElementRef = useRef<HTMLDivElement>(null);
 
@@ -39,4 +39,4 @@ const UseStateDemo: NextPage = () => {
   );
 };
 
-export default UseStateDemo;
+export default ResizeObserverPage;

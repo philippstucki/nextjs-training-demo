@@ -58,6 +58,9 @@ const Page: NextPage = () => {
       <h2>Hooks</h2>
       <ul>
         <li>
+          <Link href="/hooks/use-state">useState()</Link>
+        </li>
+        <li>
           <Link href="/hooks/lifecycle-methods">
             Function Component Lifecycle
           </Link>

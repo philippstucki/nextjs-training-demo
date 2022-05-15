@@ -2,13 +2,6 @@ import { NextPage } from "next";
 import React from "react";
 import { useElementWidth } from "./useElementWidth";
 
-const TableHeaderColumns = () => (
-  <React.Fragment>
-    <th>Name</th>
-    <th>Age</th>
-  </React.Fragment>
-);
-
 const Container = () => {
   const [containerElementRef, width] = useElementWidth<HTMLDivElement>();
 
@@ -33,11 +26,11 @@ const Container = () => {
   );
 };
 
-const UseStateDemo: NextPage = () => (
+const UseElementWidthPage: NextPage = () => (
   <>
     <Container />
     <Container />
   </>
 );
 
-export default UseStateDemo;
+export default UseElementWidthPage;

@@ -1,7 +1,7 @@
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import type { NextPage } from "next";
 
-const LifeCyclePage: NextPage = () => {
+const LifeCycleMethodsPage: NextPage = () => {
   const domRef = useRef<HTMLDivElement>(null);
 
   const [count1, setCount1] = useState(0);
@@ -44,4 +44,4 @@ const LifeCyclePage: NextPage = () => {
   );
 };
 
-export default LifeCyclePage;
+export default LifeCycleMethodsPage;
