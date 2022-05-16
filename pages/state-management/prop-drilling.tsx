@@ -24,10 +24,10 @@ const UserInfo = (props: UserInfoProps) => (
   <div>Current User: {props.userInfo.name}</div>
 );
 
-const Page: NextPage = () => (
+const PropDrillingPage: NextPage = () => (
   <main>
     <Header userInfo={{ name: "Horace Silver" }} />
   </main>
 );
 
-export default Page;
+export default PropDrillingPage;

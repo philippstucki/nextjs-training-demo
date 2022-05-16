@@ -20,7 +20,7 @@ const useItemsStore = create<ItemsState>((set) => ({
     })),
 }));
 
-////////// actual page
+////////// components
 
 const ItemsOverview = () => {
   const items = useItemsStore((state) => state.items);
@@ -44,7 +44,7 @@ const AddItem = () => {
   return <button onClick={addItem}>Add Item</button>;
 };
 
-const ContextApiPage: NextPage = () => {
+const ZustandPage: NextPage = () => {
   return (
     <main>
       <ItemsOverview />
@@ -54,4 +54,4 @@ const ContextApiPage: NextPage = () => {
   );
 };
 
-export default ContextApiPage;
+export default ZustandPage;
