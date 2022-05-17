@@ -11,5 +11,7 @@ describe("Testing Home", () => {
     });
 
     expect(heading).toBeInTheDocument();
+
+    expect(screen.getByText("Landinge Page")).toBeInTheDocument();
   });
 });
