@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import { Provider } from "react-redux";
-import { useAppDispatch, useAppSelector } from "./hooks";
-import { addItem } from "./itemsSlice";
-import { itemsStore } from "./store";
+import { useAppDispatch, useAppSelector } from "../../../src/redux/hooks";
+import { addItem } from "../../../src/redux/itemsSlice";
+import { itemsStore } from "../../../src/redux/store";
 
 const ItemsOverview = () => {
   const items = useAppSelector((state) => state.items.items);

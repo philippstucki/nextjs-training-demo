@@ -1,6 +1,5 @@
 import { NextPage } from "next";
-import React from "react";
-import { useElementWidth } from "./useElementWidth";
+import { useElementWidth } from "../../src/hooks/useElementWidth";
 
 const Container = () => {
   const [containerElementRef, width] = useElementWidth<HTMLDivElement>();

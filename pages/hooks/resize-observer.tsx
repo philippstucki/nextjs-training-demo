@@ -7,12 +7,12 @@ const ResizeObserverPage: NextPage = () => {
 
   const [width, setWidth] = useState<number>(0);
 
-  const resizeCallback = useCallback((entries: ResizeObserverEntry[]) => {
-    console.log(entries[0].contentRect.width);
-    setWidth(entries[0].contentRect.width | 0);
-  }, []);
-
   useEffect(() => {
+    const resizeCallback = (entries: ResizeObserverEntry[]) => {
+      console.log(entries[0].contentRect.width);
+      setWidth(entries[0].contentRect.width | 0);
+    };
+
     observer.current = new ResizeObserver(resizeCallback);
     containerElementRef.current &&
       observer.current.observe(containerElementRef.current);
