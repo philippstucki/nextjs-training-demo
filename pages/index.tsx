@@ -93,6 +93,9 @@ const Page: NextPage = () => {
         <li>
           <Link href="/state-management/redux/">Redux</Link>
         </li>
+        <li>
+          <Link href="/state-management/recoil/">Recoil</Link>
+        </li>
       </ul>
     </main>
   );
