@@ -1,4 +1,3 @@
-import React from "react";
 import type { NextPage } from "next";
 import Link from "next/link";
 
@@ -26,13 +25,6 @@ const Page: NextPage = () => {
         </li>
         <li>
           <Link href="/prerendering-modes/ssr">Server Side Rendering</Link>
-        </li>
-      </ul>
-
-      <h2>Environment</h2>
-      <ul>
-        <li>
-          <Link href="/env-vars">Env Variables</Link>
         </li>
       </ul>
 
