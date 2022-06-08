@@ -1,10 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-// available at /api/posts/[id]
+// available at /api/protected/hello
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  const id = req.query.id;
-  res.status(200).json({ id, title: `Post #${id}` });
+  res.status(200).json({ name: "Hello" });
 };
 
 export default handler;

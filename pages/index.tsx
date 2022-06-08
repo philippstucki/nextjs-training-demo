@@ -109,6 +109,22 @@ const Page: NextPage = () => {
           <Link href="/cssinjs/emotion/">Emotion</Link>
         </li>
       </ul>
+
+      <h2>Various Demos</h2>
+      <ul>
+        <li>
+          <Link href="/portals/">Portals</Link>
+        </li>
+        <li>
+          <Link href="/error-boundaries/">Error Boundaries</Link>
+        </li>
+        <li>
+          <Link href="/middleware/">Middleware</Link>
+        </li>
+        <li>
+          <Link href="/env-variables/">Environment Variables</Link>
+        </li>
+      </ul>
     </main>
   );
 };
