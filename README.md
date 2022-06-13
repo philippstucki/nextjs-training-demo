@@ -1,1 +1,1 @@
-# Next.js Training Demo
+# Next.js Training Demos

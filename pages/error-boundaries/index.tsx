@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { useState } from "react";
+import { CustomErrorBoundary } from "../../src/components/CustomErrorBoundary";
 
 export const ComponentWithErrors = () => {
   const [trigger, setTrigger] = useState(false);
@@ -22,7 +23,9 @@ export const ComponentWithErrors = () => {
 const ErrorBoundariesPage: NextPage = () => {
   return (
     <main>
-      <ComponentWithErrors />
+      <CustomErrorBoundary>
+        <ComponentWithErrors />
+      </CustomErrorBoundary>
     </main>
   );
 };
